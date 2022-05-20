@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>TITLE GOES HERE</title>
+    <script src="https://kit.fontawesome.com/3976799da5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="header">
+        <img src="img/logo.svg" alt="logo"/>
+        <h1>Lorem Ipsum Dolor Sit Amet Consectetur</h1>
+    </div>
+
+    <div style="float:left;">
+        <iframe class="tabletest" type="text/html" src="table-data/test-table.html"></iframe>
+    </div>
+    
+    <div style="float:right;" class="map">
+        <object data="map.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="fab-container">
+    <div class="fab fab-icon-holder">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul class="fab-options">
+        <li>
+            <span class="fab-label">Feature1</span>
+            <div class="fab-icon-holder">
+                <i class="fa-solid fa-question" id="question"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Feature2</span>
+            <div class="fab-icon-holder">
+                <i class="fa-solid fa-map"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <img src="img/tutImg.png" alt="tutorial">
+        </div>
+    </div>
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+    var icn = document.getElementById("question");
+    var span = document.getElementsByClassName("close")[0];
+
+    icn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        moday.style.display = none;
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
