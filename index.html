@@ -15,9 +15,9 @@
     <div style="float:left;">
         <iframe class="tabletest" type="text/html" src="table-data/test-table.html"></iframe>
     </div>
-    
+
     <div style="float:right;" class="map">
-        <object data="map.svg" type="image/svg+xml"></object>
+        <object id="svg-object" data="map.svg" type="image/svg+xml"></object>
     </div>
 
     <div class="fab-container">
@@ -27,15 +27,27 @@
 
     <ul class="fab-options">
         <li>
-            <span class="fab-label">Feature1</span>
+            <span class="fab-label">Tutorial</span>
             <div class="fab-icon-holder">
                 <i class="fa-solid fa-question" id="question"></i>
             </div>
         </li>
         <li>
-            <span class="fab-label">Feature2</span>
+            <span class="fab-label">Repositori</span>
             <div class="fab-icon-holder">
-                <i class="fa-solid fa-map"></i>
+                <i class="fa-brands fa-github" onClick="window.open('https://github.com/amm0549/workmap');"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Kontak</span>
+            <div class="fab-icon-holder">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </li>
+        <li>
+            <span class="fab-label">Bagikan</span>
+            <div class="fab-icon-holder">
+                <i class="fa-solid fa-share"></i>
             </div>
         </li>
     </ul>
@@ -68,6 +80,14 @@
             modal.style.display = "none";
         }
     }
+</script>
+
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        var svgObject = document.getElementById('svg-object').contentDocument;
+        var svg = svgObject.getElementById('svg5');
+        console.log(svg);
+    })
 </script>
 </body>
 </html>
