@@ -125,72 +125,7 @@ h1 {
 }
 
 /* tutorial modal */
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4);
-	-webkit-animation-name: fadeIn;
-	-webkit-animation-duration: 0.4s;
-	animation-name: fadeIn;
-	animation-duration: 0.4s
-  }
-
-  .modal-content {
-	position: fixed;
-	bottom: 0;
-	background-color: #fefefe;
-	width: 100%;
-	-webkit-animation-name: slideIn;
-	-webkit-animation-duration: 0.4s;
-	animation-name: slideIn;
-	animation-duration: 0.4s
-  }
-
-  .close {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	color: #f1f1f1;
-	font-size: 40px;
-	font-weight: bold;
-	transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
-  }
-
-  .modal-body {padding: 2px 16px;}
-
-  @-webkit-keyframes slideIn {
-	from {bottom: -300px; opacity: 0} 
-	to {bottom: 0; opacity: 1}
-  }
-  
-  @keyframes slideIn {
-	from {bottom: -300px; opacity: 0}
-	to {bottom: 0; opacity: 1}
-  }
-  
-  @-webkit-keyframes fadeIn {
-	from {opacity: 0} 
-	to {opacity: 1}
-  }
-  
-  @keyframes fadeIn {
-	from {opacity: 0} 
-	to {opacity: 1}
-  }
+/* REMOVED TEMPORARILY */
 
   /* map css settings */
 .map {
@@ -219,40 +154,59 @@ h1 {
 }
 
 /* share modal css */
-.modal-share-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(0,0,0,0.3);
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.2s ease;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+.modal-share{
+    top: 20%;
 }
 
-.open {
-	opacity: 1;
-	pointer-events: all;
+.btn-close{
+    box-shadow: none;
+    border: none;
+    outline: none;
 }
 
-.modal-share {
-	background-color: #EBEBEB;
-	padding: 20px;
-	border-radius: 10px;
-	margin: 0 auto;
-	width: 70%;
-	text-align: center;
-	max-width: 1240px;
+.modal-body-share .field{
+    margin: 15px 0px -5px 0px;
+    height: 45px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 0 5px;
 }
 
-.modal-share h2 {
-	margin-bottom: 20px;
+.modal-body-share .field.active{
+    border-color: #7d2ae8;
 }
 
-.modal-share p {
-	margin-bottom: 30px;
+.field span{
+    width: 50px;
+    font-size: 1.1rem;
+}
+
+.field.active span{
+    color: #7d2ae8;
+}
+
+.field input{
+    border: none;
+    outline: none;
+    font-size: 0.89rem;
+    width: 100%;
+    height: 100%;
+}
+
+.field button{
+    padding: 5px 16px;
+    color: #fff;
+    background: #7d2ae8;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+@media (max-width: 330px) {
+    .modal-body-share .icons a{
+        margin-right: 15px;
+        width: 35px;
+        height: 35px;
+    }
 }

@@ -55,67 +55,37 @@
 </div>
 
 <!------------------------------the tutorial modal-------------------------------->
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-body">
-            <img src="img/tutImg.png" alt="tutorial">
+<!-- REMOVED TEMPORARILY -->
+
+<!------------------------------the share modal------------------------------------>
+<div class="modal-share fade" id="myShare" tabindex="-1" aria-labelledby="myShareLabel" aria-hidden="true">
+    <div class="modal-dialog-share">
+        <div class="modal-content-share">
+            <div class="modal-header-share">
+                <h5 class="modal-title-share" id="myShareLabel">Bagikan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body-share">
+                <p>Bagikan tautan situs ini</p>
+                <div class="field d-flex align-items-center justify-content-between">
+                    <span class="fas fa-link text-center"></span>
+                    <input type="text" value="some.com/share">
+                    <button>Salin</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!------------------------------the share modal------------------------------------>
-<div id="shareModal" class="modal-share-container">
-    <div class="modal-share">
-        <h2>Bagikan</h2>
-        <p>Jika anda senang menggunakan situs ini, anda dapat membagikannya.</p>
-    </div>
-</div>
-
-<!-----------------------------tutorial modal script------------------------------->
-<script>
-    var modal = document.getElementById("myModal");
-    var icn = document.getElementById("question");
-    var span = document.getElementsByClassName("close")[0];
-
-    icn.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-        moday.style.display = none;
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
-
-<!-------------------------share modal script----------------------------------------->
-<script>
-    const share_btn = document.getElementById('share');
-    const mc_el = document.querySelector('.modal-share-container')
-
-    share_btn.addEventListener('click',()=>{
-        mc_el.classList.add('open');
-    })
-
-    mc_el.addEventListener('click', (event)=>{
-        if(event.target.classList.contains('modal-share-container')) {
-            mc_el.classList.remove('open');
-        }
-    });
+<!-----------------------------SHARE MODAL SCRIPT------------------------------------->
+<script 
+    src="js/share-modal.js">
 </script>
 
 <!-------------------------svg script mercy on my soul-------------------------------->
-<script type="text/javascript">
-    window.addEventListener("load", function() {
-        var svgObject = document.getElementById('svg-object').contentDocument;
-        var svg = svgObject.getElementById('svg5');
-        console.log(svg);
-    })
+<script
+    src="js/map.js">
 </script>
+
 </body>
 </html>
