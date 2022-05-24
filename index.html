@@ -13,13 +13,14 @@
     </div>
 
     <div style="float:left;">
-        <iframe class="tabletest" type="text/html" src="table-data/test-table.html"></iframe>
+        <iframe class="tabletest" type="text/html" src="table-data/styled-table.html"></iframe>
     </div>
 
     <div style="float:right;" class="map">
         <object id="svg-object" data="map.svg" type="image/svg+xml"></object>
     </div>
 
+<!-------------------------------------------the hamburger menu---------------------------------------->
     <div class="fab-container">
     <div class="fab fab-icon-holder">
         <i class="fa-solid fa-bars"></i>
@@ -47,12 +48,13 @@
         <li>
             <span class="fab-label">Bagikan</span>
             <div class="fab-icon-holder">
-                <i class="fa-solid fa-share"></i>
+                <i class="fa-solid fa-share" id="share"></i>
             </div>
         </li>
     </ul>
 </div>
 
+<!------------------------------the tutorial modal-------------------------------->
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
@@ -62,6 +64,15 @@
     </div>
 </div>
 
+<!------------------------------the share modal------------------------------------>
+<div id="shareModal" class="modal-share-container">
+    <div class="modal-share">
+        <h2>Bagikan</h2>
+        <p>Jika anda senang menggunakan situs ini, anda dapat membagikannya.</p>
+    </div>
+</div>
+
+<!-----------------------------tutorial modal script------------------------------->
 <script>
     var modal = document.getElementById("myModal");
     var icn = document.getElementById("question");
@@ -82,6 +93,23 @@
     }
 </script>
 
+<!-------------------------share modal script----------------------------------------->
+<script>
+    const share_btn = document.getElementById('share');
+    const mc_el = document.querySelector('.modal-share-container')
+
+    share_btn.addEventListener('click',()=>{
+        mc_el.classList.add('open');
+    })
+
+    mc_el.addEventListener('click', (event)=>{
+        if(event.target.classList.contains('modal-share-container')) {
+            mc_el.classList.remove('open');
+        }
+    });
+</script>
+
+<!-------------------------svg script mercy on my soul-------------------------------->
 <script type="text/javascript">
     window.addEventListener("load", function() {
         var svgObject = document.getElementById('svg-object').contentDocument;

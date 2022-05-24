@@ -1,3 +1,4 @@
+/* main body */
 * {
 	margin: 0;
 	padding: 0;
@@ -34,6 +35,7 @@ h1 {
 	padding-right: 20px;
 }
 
+/* ????? i forgot what's this for */
 .parent {
 	margin: 1rem;
 	padding: 2rem 2rem;
@@ -45,6 +47,7 @@ h1 {
 	vertical-align: middle;
   }
 
+/* hamburger menu */
 .fab-container {
 	position: fixed;
 	bottom: 50px;
@@ -121,6 +124,7 @@ h1 {
 	margin-right: 10px;
 }
 
+/* tutorial modal */
 .modal {
 	display: none;
 	position: fixed;
@@ -188,6 +192,7 @@ h1 {
 	to {opacity: 1}
   }
 
+  /* map css settings */
 .map {
 	position: static;
 	right: 100px;
@@ -200,6 +205,7 @@ h1 {
 	width: auto;
 }
 
+/* placeholder css settings */
 .tabletest {
 	position: static;
 	margin-top: 30%;
@@ -210,4 +216,43 @@ h1 {
 	z-index: 500;
 	margin-right: 20px;
 	background-color: white;
+}
+
+/* share modal css */
+.modal-share-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.3);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.2s ease;
+}
+
+.open {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal-share {
+	background-color: #EBEBEB;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+	max-width: 1240px;
+}
+
+.modal-share h2 {
+	margin-bottom: 20px;
+}
+
+.modal-share p {
+	margin-bottom: 30px;
 }
