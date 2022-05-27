@@ -135,8 +135,20 @@ h1 {
 
 /* placeholder table css settings */
 
-
 /* map css settings - interactive */
 
 /* share modal css */
 /* REMOVED TEMPORARILY */
+
+/* page load modal */
+#pageModal {
+	border-radius: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 3%;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	height: auto;
+	background-color: aliceblue;
+}
