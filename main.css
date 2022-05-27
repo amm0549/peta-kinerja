@@ -35,18 +35,6 @@ h1 {
 	padding-right: 20px;
 }
 
-/* ????? i forgot what's this for */
-.parent {
-	margin: 1rem;
-	padding: 2rem 2rem;
-	text-align: center;
-  }
-  .child {
-	display: inline-block;
-	padding: 1rem 1rem;
-	vertical-align: middle;
-  }
-
 /* hamburger menu */
 .fab-container {
 	position: fixed;
@@ -127,31 +115,28 @@ h1 {
 /* tutorial modal */
 /* REMOVED TEMPORARILY */
 
-  /* map css settings */
+/* map css settings */
 .map {
-	position: static;
-	right: 100px;
-	margin-right: 40px;
-	margin-left: 40px;
+	position: absolute;
+}
+#svg-object {
+	position: fixed;
+	display: flex;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 10%;
+	width: 80%;
+	height: 90%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
-.map svg{
-	height: auto;
-	width: auto;
-}
 
-/* placeholder css settings */
-.tabletest {
-	position: static;
-	margin-top: 30%;
-	margin-left: 30%;
-	margin-bottom: 20%;
-	height: 270px;
-	width: 320px;
-	z-index: 500;
-	margin-right: 20px;
-	background-color: white;
-}
+/* placeholder table css settings */
+
+
+/* map css settings - interactive */
 
 /* share modal css */
 /* REMOVED TEMPORARILY */

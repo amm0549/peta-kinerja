@@ -17,11 +17,7 @@
         <h1>Lorem Ipsum Dolor Sit Amet Consectetur</h1>
     </div>
 
-    <div style="float:left;">
-        <iframe class="tabletest" type="text/html" src="table-data/styled-table.html"></iframe>
-    </div>
-
-    <div style="float:right;" class="map">
+    <div style="text-align: center" class="map">
         <object id="svg-object" data="map.svg" type="image/svg+xml"></object>
     </div>
 
@@ -59,17 +55,30 @@
     </ul>
 </div>
 
-<!------------------------------the tutorial modal-------------------------------->
+<!------------------------------the tutorial modal------------------------------------>
 <!-- REMOVED TEMPORARILY -->
 
-<!------------------------------the share modal------------------------------------>
+<!------------------------------the share modal--------------------------------------->
 <!-- REMOVED TEMPORARILY -->
 
+<!---------------------------------MAP MODAL------------------------------------------>
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div style="float:left;">
+                    <iframe class="tabletest" type="text/html" src="table-data/styled-table.html"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-------------------------svg script mercy on my soul-------------------------------->
-<script
-    src="js/map.js">
-</script>
 
 </body>
 </html>
+
