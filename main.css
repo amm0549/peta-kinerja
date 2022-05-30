@@ -134,5 +134,8 @@ h1 {
 
 
 /* placeholder table css settings */
+#styledTable {
+	height: 400px;
+}
 
 /* map css settings - interactive */
