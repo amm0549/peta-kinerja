@@ -136,6 +136,9 @@ h1 {
 /* placeholder table css settings */
 #styledTable {
 	height: 400px;
+	margin-right: 5%;
+	margin-left: 5%;
+	width: 90%;
 }
 
 /* map css settings - interactive */
