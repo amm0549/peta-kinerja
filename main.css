@@ -5,10 +5,13 @@
 }
 
 body {
-	font-family: monospace;
+	font-family: 'Segoe UI', sans-serif;
 	background: #f4f4f9;
 }
 
+.navbar-brand {
+	font-size: larger;
+}
 
 /* hamburger menu */
 .fab-container {
@@ -117,3 +120,6 @@ body {
 }
 
 /* map css settings - interactive */
+#kalteng path:hover {
+	opacity: .5;
+}
