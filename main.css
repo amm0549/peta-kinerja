@@ -1,3 +1,5 @@
+@font-face { font-family: Porter; src: url('Porter Bold.ttf'); } 
+
 /* main body */
 * {
 	margin: 0;
@@ -6,12 +8,19 @@
 
 body {
 	font-family: 'Segoe UI', sans-serif;
-	background: #f4f4f9;
+	background: white;
 }
 
 .navbar-brand {
 	font-size: larger;
+	font-family: 'Porter', sans-serif;
 }
+
+.h5 {
+	font-family: 'Porter', sans-serif;
+}
+
+/* mobile incompatibility */
 
 /* hamburger menu */
 .fab-container {
