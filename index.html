@@ -20,6 +20,13 @@
             $("#pageModal").modal('hide');
         })
     </script>
+    <script>
+      $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </head>
 <body>
   
@@ -141,6 +148,20 @@
             </div>
         </li>
     </ul>
+</div>
+
+<!---------------------------------------------sidebar------------------------------------------------->
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+      <ul class="list-unstyled components">
+          <h1>Selamat Datang di Peta Kinerja Digital.</h1>
+          <p>Silahkan klik daerah yang anda ingin lihat kinerjanya, atau gunakan Mode Sederhana.</p>
+          <li>
+              <button id="simplebtn" href="simple.html" class="btn btn-info" style="position:center" role="button">Mode Sederhana</button>
+          </li>
+      </ul>
+  </nav>
 </div>
 
 <!--------------------------------mapdata modals--------------------------------------->
