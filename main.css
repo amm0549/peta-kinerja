@@ -12,6 +12,7 @@ body {
 .navbar-brand {
 	font-size: larger;
 	font-family: 'Segoe UI', sans-serif;
+	font-weight: bold;
 }
 
 .h5 {
