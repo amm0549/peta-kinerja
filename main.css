@@ -112,7 +112,14 @@ a.article:hover {
 #simplebtn {
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 10px;
 	width: 80%;
+}
+
+#questionbtn {
+	width: 50px;
+	background-color: none;
+	font-size: larger;
 }
 
 /* hamburger menu */
@@ -243,4 +250,19 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+#tutImg {
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+#tutList {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#akt {
+	margin-top: 1%;
 }
